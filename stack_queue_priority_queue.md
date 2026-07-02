@@ -125,4 +125,15 @@ struct CompareByAge {
 };
 
 priority_queue<Person, vector<Person>, CompareByAge> pq;
+pq.push({"张三", 25});
+    pq.push({"李四", 20});
+    pq.push({"王五", 30});
+    
+    while (!pq.empty()) {
+        Person p = pq.top();
+        cout << p.name << " : " << p.age << endl;  // 李四 : 20  张三 : 25  王五 : 30
+        pq.pop();
+    }
+    return 0;
+}
 ```
