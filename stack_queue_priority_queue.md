@@ -125,7 +125,7 @@ struct CompareByAge {
 };
 
 priority_queue<Person, vector<Person>, CompareByAge> pq;
-pq.push({"张三", 25});
+    pq.push({"张三", 25});
     pq.push({"李四", 20});
     pq.push({"王五", 30});
     
